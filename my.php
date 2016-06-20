@@ -1,22 +1,22 @@
 <?php
 session_start();
 
-//¼ì²âÊÇ·ñµÇÂ¼£¬ÈôÃ»µÇÂ¼Ôò×ªÏòµÇÂ¼½çÃæ
+//æ£€æµ‹æ˜¯å¦ç™»å½•ï¼Œè‹¥æ²¡ç™»å½•åˆ™è½¬å‘ç™»å½•ç•Œé¢
 if(!isset($_SESSION['userid'])){
 	header("Location:login.html");
 	exit();
 }
 
-//°üº¬Êı¾İ¿âÁ¬½ÓÎÄ¼ş
+//åŒ… å«æ•°æ®åº“è¿æ¥æ–‡ä»¶
 include('conn.php');
 $userid = $_SESSION['userid'];
 $username = $_SESSION['username'];
 $user_query = mysql_query("select * from user where uid=$userid limit 1");
 $row = mysql_fetch_array($user_query);
-echo 'ÓÃ»§ĞÅÏ¢£º<br />';
-echo 'ÓÃ»§ID£º',$userid,'<br />';
-echo 'ÓÃ»§Ãû£º',$username,'<br />';
-echo 'ÓÊÏä£º',$row['email'],'<br />';
-echo '×¢²áÈÕÆÚ£º',date("Y-m-d", $row['regdate']),'<br />';
-echo '<a href="login.php?action=logout">×¢Ïú</a> µÇÂ¼<br />';
+echo 'ç”¨æˆ·ä¿¡æ¯ï¼š<br />';
+echo 'ç”¨æˆ·IDï¼š',$userid,'<br />';
+echo 'ç”¨æˆ·åï¼š',$username,'<br />';
+echo 'é‚®ç®±ï¼š',$row['email'],'<br />';
+echo 'æ³¨å†Œæ—¥æœŸï¼š',date("Y-m-d", $row['regdate']),'<br />';
+echo '<a href="login.php?action=logout">æ³¨é”€</a> ç™»å½•<br />';
 ?>
