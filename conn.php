@@ -1,14 +1,14 @@
 <?php
 /*****************************
-*Êý¾Ý¿âÁ¬½Ó
+*æ•°æ® åº“è¿žæŽ¥
 *****************************/
 $conn = @mysql_connect("localhost","root","root123");
 if (!$conn){
-	die("Á¬½ÓÊý¾Ý¿âÊ§°Ü£º" . mysql_error());
+	die("è¿žæŽ¥æ•°æ®åº“å¤±è´¥ï¼š" . mysql_error());
 }
 mysql_select_db("test", $conn);
-//×Ö·û×ª»»£¬¶Á¿â
+//å­—ç¬¦è½¬æ¢ï¼Œè¯»åº“
 mysql_query("set character set 'gbk'");
-//Ð´¿â
+//å†™åº“
 mysql_query("set names 'gbk'");
 ?>
