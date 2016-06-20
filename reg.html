@@ -1,8 +1,8 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
-<title>ÓÃ»§×¢²á</title>
+<meta http-equiv="Content-Type" content="text/html; charset= UTF-8" />
+<title>ç”¨æˆ·æ³¨å†Œ</title>
   <style type="text/css">
     html{font-size:12px;}
 	fieldset{width:520px; margin: 0 auto;}
@@ -19,25 +19,25 @@ function InputCheck(RegForm)
 {
   if (RegForm.username.value == "")
   {
-    alert("ÓÃ»§Ãû²»¿ÉÎª¿Õ!");
+    alert("ç”¨æˆ·åä¸å¯ä¸ºç©º!");
     RegForm.username.focus();
     return (false);
   }
   if (RegForm.password.value == "")
   {
-    alert("±ØĞëÉè¶¨µÇÂ½ÃÜÂë!");
+    alert("å¿…é¡»è®¾å®šç™»é™†å¯†ç !");
     RegForm.password.focus();
     return (false);
   }
   if (RegForm.repass.value != RegForm.password.value)
   {
-    alert("Á½´ÎÃÜÂë²»Ò»ÖÂ!");
+    alert("ä¸¤æ¬¡å¯†ç ä¸ä¸€è‡´!");
     RegForm.repass.focus();
     return (false);
   }
   if (RegForm.email.value == "")
   {
-    alert("µç×ÓÓÊÏä²»¿ÉÎª¿Õ!");
+    alert("ç”µå­é‚®ç®±ä¸å¯ä¸ºç©º!");
     RegForm.email.focus();
     return (false);
   }
@@ -48,29 +48,29 @@ function InputCheck(RegForm)
 </head>
 <div>
 <fieldset>
-<legend>ÓÃ»§×¢²á</legend>
+<legend>ç”¨æˆ·æ³¨å†Œ</legend>
 <form name="RegForm" method="post" action="reg.php" onSubmit="return InputCheck(this)">
 <p>
-<label for="username" class="label">ÓÃ»§Ãû:</label>
+<label for="username" class="label">ç”¨æˆ·å:</label>
 <input id="username" name="username" type="text" class="input" />
-<span>(±ØÌî£¬3-15×Ö·û³¤¶È£¬Ö§³Öºº×Ö¡¢×ÖÄ¸¡¢Êı×Ö¼°_)</span>
+<span>(å¿…å¡«ï¼Œ3-15å­—ç¬¦é•¿åº¦ï¼Œæ”¯æŒæ±‰å­—ã€å­—æ¯ã€æ•°å­—åŠ_)</span>
 <p/>
 <p>
-<label for="password" class="label">ÃÜ Âë:</label>
+<label for="password" class="label">å¯† ç :</label>
 <input id="password" name="password" type="password" class="input" />
-<span>(±ØÌî£¬²»µÃÉÙÓÚ6Î»)</span>
+<span>(å¿…å¡«ï¼Œä¸å¾—å°‘äº6ä½)</span>
 <p/>
 <p>
-<label for="repass" class="label">ÖØ¸´ÃÜÂë:</label>
+<label for="repass" class="label">é‡å¤å¯†ç :</label>
 <input id="repass" name="repass" type="password" class="input" />
 <p/>
 <p>
-<label for="email" class="label">µç×ÓÓÊÏä:</label>
+<label for="email" class="label">ç”µå­é‚®ç®±:</label>
 <input id="email" name="email" type="text" class="input" />
-<span>(±ØÌî)</span>
+<span>(å¿…å¡«)</span>
 <p/>
 <p>
-<input type="submit" name="submit" value="  Ìá½»×¢²á  " class="left" />
+<input type="submit" name="submit" value="  æäº¤æ³¨å†Œ  " class="left" />
 </p>
 </form>
 </fieldset>
